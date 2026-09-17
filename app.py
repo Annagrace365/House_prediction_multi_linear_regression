@@ -9,4 +9,4 @@ floors=st.number_input("Enter no of floors:", min_value=0 ,max_value=10, value=1
 
 if st.button("Predict"):
   prediction=model.predict([[area,bedrooms,floors]])
-  st.write(f"Predicted price(in lakhs): {prediction[0]:.2f}")
+  st.success(f"Predicted price: {prediction[0]:.2f} Lakhs")
