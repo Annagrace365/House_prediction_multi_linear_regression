@@ -12,8 +12,8 @@ def predict_price(area, bedrooms, floors):
 
     input_data = pd.DataFrame({
         "Area": [area],
-        "Floors": [floors],
         "Bedrooms": [bedrooms],
+        "Floors": [floors],
         
     })
 
